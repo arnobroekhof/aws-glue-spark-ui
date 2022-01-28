@@ -75,7 +75,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v2
         with:
-          context: $GLUE_VERSION.
+          context: glue-1_0-2_0
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
