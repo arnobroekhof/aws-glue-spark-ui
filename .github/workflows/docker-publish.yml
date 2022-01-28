@@ -17,7 +17,6 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-  GLUE_VERSION: glue-1_0-2_0
 
 
 jobs:
