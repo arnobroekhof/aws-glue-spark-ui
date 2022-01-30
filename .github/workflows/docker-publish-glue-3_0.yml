@@ -77,8 +77,7 @@ jobs:
           context: glue-3_0
           platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' }}
-          tags:
-            ghcr.io/arnobroekhof/aws-glue-spark-ui:glue-3_0
+          tags: ghcr.io/arnobroekhof/aws-glue-spark-ui:glue-3_0
           labels: ${{ steps.meta.outputs.labels }}
 
       # Sign the resulting Docker image digest except on PRs.
