@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
-FROM --platform=$BUILDPLATFORM amazonlinux:2
-FROM --platform=$BUILDPLATFORM amazoncorretto:8
-FROM --platform=$BUILDPLATFORM maven:3.6-amazoncorretto-8
+FROM amazonlinux:2
+FROM amazoncorretto:8
+FROM maven:3.6-amazoncorretto-8
 
 RUN yum install -y procps
 
